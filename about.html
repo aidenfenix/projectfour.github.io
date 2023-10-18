@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Aiden's Super Awesome Website</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html">ENGR11a Portfolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Project 1</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html">Project 2</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="post.html">Project 3</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.html">Project 4</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('assets/img/army3.jpg')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="page-heading">
+                            <h1>Remixing 3D files into 3D Prints!</h1>
+                            <span class="subheading">Hook and Coinholder Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <main class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                            <h2 class="subheading">Brainstorming / Ideation</h2>
+                        <p>When coming up with something that I was interested in printing, my mind immediately jumped to organizational items for my room. With this broad idea in mind, I began thinking of potential items that I could 3D print and optimize to my own needs. At first, I thought of wire holders, a modular vanity tray, and a pencil holder. While I enjoy the simplicity of these items, I thought they were perfect as they are and not in need of additional attachments. I started thinking about two items for which I could never find the right place – my keys and my coins! As someone who cares deeply about organization and saving money (even if it's just to buy a small beverage!) something that addresses this problem was a no-brainer. Unfortunately, I do not have a place to put my coins where they are sorted properly for easy money counting. That's when the idea came to me. Why don't I organize both of these miscellaneous items using one apparatus? </p>
+                        <p></p>
+                                    <a href="#!"><img class="img-fluid" src="assets/img/brainstorm.jpg" alt="..." /></a>
+                                    <p></p>
+                            <h2 class="subheading">Planning</h2>
+                        <p>When designing this, I needed to consider a way to hang a key from the apparatus without it getting in the way of the coin holder. The solution to this problem was simple: I would create a design that combines four hooks and a coin holder via a pole protruding from its center. Here is a sketch of my design:</p>
+                        <p></p>
+                        <a href="#!"><img class="img-fluid" src="assets/img/sketch.jpg" alt="..." /></a>
+                        <p></p>
+                            <h2 class="subheading">TinkerCAD and PrusaSlicer</h2>
+                        <p>I found STL files for both a cylindrical coin holder and a hook, which I was able to open in TinkerCAD and combine by placing and extruding a cylindrical pole from the center of the coin holder. At the top of this cylindrical pole, I placed a cube so that the hooks have a place to sit. One challenge I faced, in the midst of this process, however, was that the protruding pole caused the print to extend beyond the print space. I took two approaches to fix this problem. The first approach was to shorten the length of the pole. The second approach involved trimming off the top portion of the print, which I determined would not affect the functionality of the apparatus. After making these alterations in TinkerCAD I was then able to open my stl file in Prusa Slicer. Because the hooks extend outward into open air, it was necessary to enable supports so that the printer could lay down filament in these areas. Additionally, I configured Prusa Slicer with specific settings to ensure optimal print quality. I chose a layer height of 0.2 mm, an infill percentage of 25%, and a moderate print speed to strike a balance between speed and quality. Lastly, I enabled a brim to improve bed adhesion and to prevent warping. After correcting this issue, I was then able to proceed with printing my design.</p> 
+
+                        <p>Note: if you're curious about more detailed print settings, reference those of my kirby print under project 1. They are the same apart from infill, which in this case was increased to 25%</p>
+                                                    <p></p>
+                            <p>Individual Components:</p>
+                                  <section class="page-section portfolio" id="portfolio">
+            <div class="container">
+                <!-- Portfolio Grid Items-->
+                <div class="row justify-content-center">
+                    <!-- Portfolio Item 1-->
+                    <div class="col-md-6">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            </div>
+                            <a href="#!"><img class="img-fluid" src="assets/img/coins.jpg" alt="..." /></a>
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 2-->
+                    <div class="col-md-6">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            </div>
+                            <a href="#!"><img class="img-fluid" src="assets/img/hook.jpg" alt="..." /></a>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        <p></p>
+        <p>Combining Pieces in TinkerCAD + Error in PrusaSlicer:</p>
+        <section class="page-section portfolio" id="portfolio">
+            <div class="container">
+                <!-- Portfolio Grid Items-->
+                <div class="row justify-content-center">
+                    <!-- Portfolio Item 1-->
+                    <div class="col-md-6">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            </div>
+                            <a href="#!"><img class="img-fluid" src="assets/img/tinkercad.jpg" alt="..." /></a>
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 2-->
+                    <div class="col-md-6">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            </div>
+                            <a href="#!"><img class="img-fluid" src="assets/img/slicerhookog.jpg" alt="..." /></a>
+                        </div>
+                    </div>
+            </div>
+        </section>
+  <p></p>
+  <p>Final stl File Before Printing:</p>
+  <a href="#!"><img class="img-fluid" src="assets/img/slicerhook.jpg" alt="..." /></a>
+  <p></p>
+
+                            <h2 class="subheading">Printing</h2>
+                                <p>Printing went very well! I had some trouble at the beginning, since I assumed that the loaded filament in one of the Prusa Mini's was PLA, when it was actually a different material. I noticed this during recalibration when the filament was not extruding uniformally onto the metal plate. I quickly changed the material to PLA then tried recalibrating again and this time it extruded perfectly! Total time to print took approximately 22 hours.</p> 
+                            <h2 class="subheading">Results</h2>
+                        <p>Overall, the print came out looking very cool! In terms of structural integrity, the print was sound, although after removing the support material, I realized that one of the hooks had not been properly attached. Unfortunately, this meant that one of the hooks was not printed correctly on the side of the cube at the top of the pole. My efforts, however, were not completely in vain. 
+                        </p>
+                        <p></p>
+                                    <a href="#!"><img class="img-fluid" src="assets/img/broken.jpg" alt="..." /></a>
+                                    <p></p>
+                            <h2 class="subheading">Post Processing</h2>
+                            At the end of the day, I still had three properly attached hooks and could correct my print by sanding the attachment sites of both the hook and the cube. I then proceeded by applying superglue to the detachment site, which would ensure a tight fit and help melt the PLA, creating a stronger bond. Here are some images of the sanding process:
+                            <p></p>
+                                  <section class="page-section portfolio" id="portfolio">
+            <div class="container">
+                <!-- Portfolio Grid Items-->
+                <div class="row justify-content-center">
+                    <!-- Portfolio Item 1-->
+                    <div class="col-md-6">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            </div>
+                            <a href="#!"><img class="img-fluid" src="assets/img/sand1.jpg" alt="..." /></a>
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 2-->
+                    <div class="col-md-6">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            </div>
+                            <a href="#!"><img class="img-fluid" src="assets/img/sand2.jpg" alt="..." /></a>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        <p></p>
+        <p>Drying and Finished Product:</p>
+        <section class="page-section portfolio" id="portfolio">
+            <div class="container">
+                <!-- Portfolio Grid Items-->
+                <div class="row justify-content-center">
+                    <!-- Portfolio Item 1-->
+                    <div class="col-md-6">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            </div>
+                            <a href="#!"><img class="img-fluid" src="assets/img/laydown.jpg" alt="..." /></a>
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 2-->
+                    <div class="col-md-6">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            </div>
+                            <a href="#!"><img class="img-fluid" src="assets/img/finished.jpg" alt="..." /></a>
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+
+<p>To improve my design, I think I'd have to extend the pole beyond its current length of about 7 inches. This would allow the keys to hang without interfering too much with the coin holder. To do this, it would require a 3D printer with a larger printing area than the Prusa Mini, which I believe I could reasonably gain access to after obtaining permission. Another aspect of the design that I would like to alter is the width of the hooks. As it currently stands, the hooks are slightly wide, meaning they can only support looped chains or strands with diameters larger than the width of the hooks themselves. The last thing I'd like to improve are the supports. I plan to use tree supports so that I use less filament, save time, and expedite post-processing</p>
+                            <h2 class="subheading">Concluding Thoughts</h2>
+<p>As it currently stands, I do not think what I've printed is suitable for my keys. However, I believe it solves a problem I had not considered before! It can hold looped cables that are not in immediate use. Having this problem solved, as opposed to being able to hold my keys, is better since I have more miscellaneous cables than I do keychains</p>
+<p>
+In conclusion, my 3D printing project started with the aim of creating an innovative key and coin organizer. While I faced challenges during the design and printing phases, the end result showed promise, albeit with room for improvement. I've identified key enhancements, such as extending the pole's length and refining the hook design. Surprisingly, the apparatus proved effective for organizing miscellaneous cables. This project highlights the adaptability of 3D printing and has sparked new ideas for future endeavors.</p>
+<p></p>
+<a href="#!"><img class="img-fluid" src="assets/img/holdingwire.jpg" alt="..." /></a>
+ 
+
+
+        <!-- Footer-->
+        <footer class="border-top">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <ul class="list-inline text-center">
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="small text-center text-muted fst-italic">Copyright &copy; Your Website 2023</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
